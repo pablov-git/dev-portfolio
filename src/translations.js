@@ -81,10 +81,10 @@ export const translations = {
           title: "E-commerce",
           description:
             "Tienda online desarrollada con JavaScript, HTML5 y CSS3, centrada en la construcción de una interfaz clara, navegación intuitiva y una experiencia de compra fluida.",
-          image: "/projects/ecommerce.png",
+          image: "/projects/e-commerce.png",
           tags: ["JavaScript", "HTML5", "CSS3"],
-          link: "#",
-          github: "#",
+          link: "https://pablov-git-e-commerce.netlify.app/",
+          github: "https://github.com/pablov-git/e-commerce",
         },
       ],
     },
