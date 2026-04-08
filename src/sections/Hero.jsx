@@ -23,6 +23,7 @@ export const Hero = ({ language }) => {
   // -------------------- TEXTOS TRADUCIDOS --------------------
   // Se obtiene únicamente el bloque de traducciones correspondiente al hero.
   const t = getTranslations(language).hero;
+  const cvFile = language === "es" ? "/cv-es.pdf" : "/cv-en.pdf";
 
   return (
     // -------------------- CONTENEDOR PRINCIPAL --------------------
@@ -67,23 +68,34 @@ export const Hero = ({ language }) => {
             </div>
 
             {/* -------------------- BOTONES DE ACCIÓN -------------------- */}
-            <div className="flex flex-wrap gap-4 pt-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                {t.primaryCta} <ArrowRight className="w-5 h-5" />
-              </Button>
+            <div className="flex flex-wrap items-center gap-4 pt-4 animate-fade-in animation-delay-300">
+              <a href="#contact" className="inline-flex">
+                <Button size="lg">
+                  {t.primaryCta} <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
 
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                {t.secondaryCta}
-              </AnimatedBorderButton>
+              <a
+                href={cvFile}
+                className="inline-flex"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  {t.secondaryCta}
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* -------------------- ENLACES SOCIALES -------------------- */}
-            <div className="flex items-center gap-4 ml-2">
+            <div className="flex items-center gap-4 ml-2 pt-2">
               <span className="text-sm text-muted-foreground animate-fade-in animation-delay-400">{t.follow}</span>
 
               <a
-                href="#"
+                href="https://github.com/pablov-git"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="GitHub"
                 className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300 animate-fade-in animation-delay-400"
               >
@@ -95,7 +107,9 @@ export const Hero = ({ language }) => {
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/in/pablo-vacas/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300 animate-fade-in animation-delay-400"
               >

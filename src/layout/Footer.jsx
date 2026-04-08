@@ -1,8 +1,8 @@
 // -------------------- DATOS ESTÁTICOS --------------------
 // Array con los enlaces sociales que se mostrarán en el footer.
 const socialLinks = [
-  { iconUrl: "/github.svg", href: "#", label: "GitHub" },
-  { iconUrl: "/linkedin.svg", href: "#", label: "LinkedIn" },
+  { iconUrl: "/github.svg", href: "https://github.com/pablov-git", label: "GitHub" },
+  { iconUrl: "/linkedin.svg", href: "https://www.linkedin.com/in/pablo-vacas/", label: "LinkedIn" },
 ];
 
 // -------------------- COMPONENTE FOOTER --------------------
@@ -35,6 +35,8 @@ export const Footer = () => {
               <a
                 key={social.label}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={social.label}
                 className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"
               >
