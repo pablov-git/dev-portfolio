@@ -11,7 +11,6 @@ const skills = [
   "TypeScript",
   "Tailwind CSS",
   "Postman",
-  "Cypress",
   "Angular",
   "Java",
   "Spring Boot",
