@@ -5,6 +5,7 @@ import { Hero } from "./sections/Hero";
 import { About } from "./sections/About";
 import { Projects } from "./sections/Projects";
 import { Contact } from "./sections/Contact";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [language, setLanguage] = useState(() => {
@@ -27,6 +28,7 @@ function App() {
         <Contact language={language} />
       </main>
       <Footer language={language} />
+      <Analytics />
     </div>
   );
 }
