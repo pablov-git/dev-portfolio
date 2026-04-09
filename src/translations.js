@@ -86,6 +86,16 @@ export const translations = {
           link: "https://memory-test-bice.vercel.app/",
           github: "https://github.com/pablov-git/memory-test",
         },
+        {
+          title: "E-commerce",
+          description:
+            "Tienda online desarrollada con JavaScript, HTML5 y CSS3, centrada en la construcción de una interfaz clara, navegación intuitiva y una experiencia de compra fluida.",
+          image: "/projects/e-commerce.png",
+          tags: ["JavaScript", "HTML5", "CSS3"],
+          link: "https://pablov-git-e-commerce.netlify.app/",
+          github: "https://github.com/pablov-git/e-commerce",
+        },
+
       ],
     },
 
@@ -229,6 +239,15 @@ export const translations = {
           tags: ["React", "JavaScript", "CSS"],
           link: "https://memory-test-bice.vercel.app/",
           github: "https://github.com/pablov-git/memory-test",
+        },
+        {
+          title: "E-commerce",
+          description:
+            "Online store built with JavaScript, HTML5, and CSS3, focused on a clear interface, intuitive navigation, and a smooth shopping experience.",
+          image: "/projects/e-commerce.png",
+          tags: ["JavaScript", "HTML5", "CSS3"],
+          link: "https://pablov-git-e-commerce.netlify.app/",
+          github: "https://github.com/pablov-git/e-commerce",
         },
       ],
     },

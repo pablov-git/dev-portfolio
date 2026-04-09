@@ -56,7 +56,7 @@ export const Projects = ({ language }) => {
             Se recorre el array de proyectos para generar una tarjeta por cada elemento.
             Se usa animationDelay para que las tarjetas aparezcan una a una.
         */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
             <div
               key={idx}
